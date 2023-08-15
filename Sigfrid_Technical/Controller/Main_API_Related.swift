@@ -14,7 +14,7 @@ extension MainViewController {
         AF.request(url, method: .get, encoding: URLEncoding.httpBody, headers: header)
         .responseDecodable(of: [RegionDataModel].self) { (response) in
             switch response.result {
-            case .failure(_):
+            case let .failure(error):
                 break
             case .success:
                 if let data = response.value {

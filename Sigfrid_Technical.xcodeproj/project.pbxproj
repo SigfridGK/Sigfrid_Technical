@@ -35,6 +35,7 @@
 		48F2B0D02A8B594200EFBE46 /* Main_API_Related.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_API_Related.swift; sourceTree = "<group>"; };
 		48F2B0D22A8B5D5E00EFBE46 /* RegionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDataModel.swift; sourceTree = "<group>"; };
 		48F2B0D52A8B63D600EFBE46 /* SubmittedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmittedVC.swift; sourceTree = "<group>"; };
+		48F2B0D72A8B77F300EFBE46 /* Sigfrid_Technical.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sigfrid_Technical.entitlements; sourceTree = "<group>"; };
 		492A03B25FB17745405BE91F /* Pods-Sigfrid_Technical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigfrid_Technical.debug.xcconfig"; path = "Target Support Files/Pods-Sigfrid_Technical/Pods-Sigfrid_Technical.debug.xcconfig"; sourceTree = "<group>"; };
 		9D59CCC047D6357B0969F1E6 /* Pods_Sigfrid_Technical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sigfrid_Technical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63DD6AF856F2B7AE0D52321 /* Pods-Sigfrid_Technical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigfrid_Technical.release.xcconfig"; path = "Target Support Files/Pods-Sigfrid_Technical/Pods-Sigfrid_Technical.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		48F2B0B32A8B548100EFBE46 /* Sigfrid_Technical */ = {
 			isa = PBXGroup;
 			children = (
+				48F2B0D72A8B77F300EFBE46 /* Sigfrid_Technical.entitlements */,
 				48F2B0CD2A8B579300EFBE46 /* Components */,
 				48F2B0C82A8B567800EFBE46 /* Controller */,
 				48F2B0C92A8B569000EFBE46 /* Model */,
@@ -414,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sigfrid_Technical/Sigfrid_Technical.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PDG2VXDZ5;
@@ -447,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sigfrid_Technical/Sigfrid_Technical.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PDG2VXDZ5;

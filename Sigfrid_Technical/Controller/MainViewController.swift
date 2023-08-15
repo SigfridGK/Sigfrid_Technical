@@ -99,6 +99,15 @@ class MainViewController: UIViewController {
     
     @objc
     func didTapSubmit(){
+        var isValid = true
+        let arrTxt = [searchCountry.text,selectedRegion,nameTxtField.text]
+        arrTxt.forEach { e in
+            if e == ""{
+                isValid = false
+                return;
+            }
+        }
+        
         performSegue(withIdentifier: "showSubmitSegue", sender: nil)
     }
     
@@ -121,7 +130,6 @@ class MainViewController: UIViewController {
         countryResult.anchorView = searchCountry
         countryResult.bottomOffset = CGPoint(x: 0, y: searchCountry.bounds.height - 50)
         countryResult.dataSource = availableCountry
-                                .filter({searchCountry.text?.lowercased() == $0.lowercased()})
         countryResult.selectionAction = { [weak self] (index, item) in
             self?.searchCountry.text = item
             self?.selectedCountry = item
