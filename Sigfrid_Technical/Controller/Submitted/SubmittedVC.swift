@@ -22,9 +22,9 @@ class SubmittedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let getCapital = allRestCountry
-                        .filter({$0.region == selectedRegion && $0.name.common == selectedCountry})
-        capital = getCapital[0].capital[0]
+//        let getCapital = allRestCountry
+//                        .filter({$0.region == selectedRegion && $0.name.common == selectedCountry})
+//        capital = getCapital[0].capital[0]
         
         // init Data
         resultTxt.text = "Hi \(name) \n\n You are from \(selectedRegion), \n\(selectedCountry) \n\nYour Capital City is:\(capital)"

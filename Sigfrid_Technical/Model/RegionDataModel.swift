@@ -9,7 +9,7 @@ import Foundation
 
 struct RegionDataModel: Codable {
     var region: String
-    var capital: [String] = []
+//    var capital: [String] = []
     var name: RegionName
 }
 
