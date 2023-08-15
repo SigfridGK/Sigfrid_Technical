@@ -1,0 +1,6 @@
+framework module Pods_Sigfrid_Technical {
+  umbrella header "Pods-Sigfrid_Technical-umbrella.h"
+
+  export *
+  module * { export * }
+}
